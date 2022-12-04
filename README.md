@@ -1,3 +1,10 @@
+## HOW TO USE
+
+Clone this repository to your local system.
+Head over to your terminal and navigate to the project.
+Run npm install to install all node packages,
+After the installation, run npm start.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
