@@ -1,0 +1,77 @@
+.n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background: white;
+}
+
+.n-left{
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 3.5rem;
+}
+
+.n-name{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.n-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.n-right>a{
+    text-decoration: none;
+    width: 6.9rem;
+    font-weight: 600;
+}
+
+.n-list{
+    flex: 10;
+}
+
+.n-list > ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+
+.n-list>ul{
+    list-style-type: none;
+}
+
+li:hover{
+    cursor: pointer;
+    color: var(--orange    );
+    font-size: 1.1rem;
+    border-right: 3px solid var(--orange);
+    padding-right: 10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    text-shadow: 1px 1px 1.5px var(--black);
+}
+
+n-button{
+    flex: 2;
+}
+
+@media screen and (max-width: 1024px){
+    .n-list{
+        display: none;
+    }
+    .n-button{
+        display: none;
+    }
+}

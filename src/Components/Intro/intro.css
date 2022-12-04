@@ -1,0 +1,238 @@
+em{
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: var(--orange);
+}
+
+.intro{
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+    padding: 1.5rem 3.5rem;
+}
+
+.i-left{
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name>:nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name>:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name>:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    left: -10%;
+    width: 50%;
+    height: 15%;
+    background: linear-gradient(90deg, transparent 0%, rgb(255, 255, 255) 5%, rgb(255, 255, 255) 100%);
+    animation: animate 5.5s linear forwards;
+    -webkit-animation: animate 7.5s linear forwards;
+}
+
+@media screen and (max-width: 1024px){
+    .i-name>:nth-child(2)::before{
+        display: none;
+    }
+}
+
+@keyframes animate{
+    0%{
+        left: -10%;
+    }
+    100%{
+        left: 55%;
+    }
+}
+
+.i-name>:nth-child(3){
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--black);
+    margin-top: 10px;
+}
+
+.i-button{
+    width: 7rem;
+    height: 2.2rem;
+}
+
+.i-icons{
+    display: flex;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+
+.i-icons>*{
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+}
+
+.i-icons>*:hover{
+    cursor: pointer;
+}
+
+.i-icons>*:hover{
+    transition: 0.4s ease;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+}
+
+.i-right{
+    flex: 1;
+    position: relative;
+}
+
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+}
+
+.i-right>:nth-child(1){
+    transform: scale(0.69);
+    -webkit-transform: scale(0.69);
+    -moz-transform: scale(0.69);
+    -ms-transform: scale(0.69);
+    -o-transform: scale(0.69);
+    left: -15%;
+    top: -9%;
+}
+
+.i-right>:nth-child(2){
+    transform: scale(0.67);
+    -webkit-transform: scale(0.67);
+    -moz-transform: scale(0.67);
+    -ms-transform: scale(0.67);
+    -o-transform: scale(0.67);
+    left: -2rem;
+    top: -4.6rem;
+}
+
+.i-right>:nth-child(3){
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4); 
+    left: 28%;
+}
+
+.i-right>:nth-child(4){
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    left: -24%;
+    top: -19%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 0;
+}
+
+.v1{
+    width: 749.19px;
+    height: 576.99px;
+}
+.v2{
+    width: 543.86px;
+    height: 564.89px;
+    margin-top: -30px;
+    margin-left: 150px;
+}
+.v3{
+    width: 300.09px;
+    height: 300.45px;
+    margin-top: -10px
+}
+
+@media screen and (max-width: 1024px){
+    .intro{
+        flex-direction: column;
+        height: 64rem;
+        gap: 7rem;
+    }
+    .i-right{
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        left: -3rem;
+    }
+    .i-right .blur{
+        display: none;
+    }
+    .floating-div:nth-of-type(1){
+        top: -7rem !important
+    }
+}
+
+.fixed{
+    position: fixed;
+    top: 3rem;
+    justify-content: space-around;
+    left: 45%;
+    display: flex;
+    height: 1.5rem;
+    gap: 2rem;
+    z-index: 100;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: 3px solid var(--orange);
+    width: 5.7rem;
+}
+.fixed>*{
+    cursor: pointer;
+}
+.fixed>*:hover{
+    height: 1.7rem;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    text-shadow: 1px 1px 1.5px var(--black);
+}
+
+@media screen and (max-width: 1024px){
+    .fixed{
+        left: 40%;
+        top: 12%;
+    }
+}

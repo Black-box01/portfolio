@@ -1,0 +1,122 @@
+:root
+{
+  --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 30%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.App{
+    padding: 0;
+    overflow: hidden;
+    color: var(--black); 
+}
+
+.loading{
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+}
+
+.loading>*{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.loading>:nth-child(2){
+  color: var(--orange);
+}
+
+@media screen and (max-width: 1024px){
+  .loading>*{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+}
+
+.button{
+  border-radius: 34px;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  -ms-border-radius: 34px;
+  -o-border-radius: 34px;
+  border: white;
+  color: white;
+  padding: 11px 26px 11px 26px;
+  font-size: 16px;
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 24px 30px  3px rgba(252, 168, 59, 0.42);
+}
+
+.button:hover{
+  background: white;
+  cursor: pointer;
+  color: var(--orange);
+  font-weight: bold;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  border: 2px solid var(--orange);
+}
+  
+.blur{
+  background:rgb(238 210 255);
+  top:-18%;
+  width:22rem;
+  height:14rem;
+  left:56%;
+  position:absolute;
+  filter:blur(72px);
+  z-index:-9;
+  border-radius: 50%;
+  -webkit-filter: blur(72px);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+} 
+
+@media screen and (max-width: 480px) {
+  .App{
+    padding: 0.5rem 1rem;
+  }
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  margin: 0 15px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25)
+}
+
+::-webkit-scrollbar-thumb{
+  margin: 0 15px;
+  border-radius: 15px;
+  background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-image: linear-gradient(to bottom, #FFA500 0%, #0000FF 100%);
+}

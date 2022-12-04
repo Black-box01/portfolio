@@ -1,0 +1,136 @@
+.works{
+    padding: 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-top: 4rem;
+}
+
+.works>.awesome>span:nth-of-type(3){
+    width: 25rem;
+}
+
+.w-right{
+    position: relative;
+    z-index: 1;
+}
+
+.w-mainCircle{
+    left: 9rem;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    top: 2rem;
+    background: white;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    box-shadow: var(--boxShadow);
+}
+
+.w-mainCircle>*{
+    position: absolute;
+}
+
+.w-mainCircle > :nth-child(1){
+    top: -3rem;
+    left: 6rem;
+}
+
+.w-mainCircle > :nth-child(2){
+    top: 6rem;
+    left: -2rem;
+}
+
+.w-mainCircle > :nth-child(3){
+    top: 5rem;
+    left: 6rem;
+}
+
+.w-mainCircle > :nth-child(4){
+    top: 5rem;
+    left: 15rem;
+}
+
+.w-mainCircle > :nth-child(5){
+    top: 13rem;
+    left: 6rem;
+}
+
+.w-secCircle{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background: white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border: 5px solid #ebebeb;
+    box-shadow: var(--smboxShadow);
+}
+
+.w-secCircle>img{
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+}
+
+.w-backCircle{
+    position: absolute;
+    height: 13rem;
+    width: 12rem;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    z-index: -1;
+}
+
+.blueCircle{
+    left: 18rem;
+    top: 0;
+    background: #1949B8;
+}
+
+.yellowCircle{
+    left: 18rem;
+    top: 8rem;
+    background: #F5C32C;
+}
+
+@media screen and (max-width: 1024px){
+    .works{
+        flex-direction: column;
+        height: 55rem;
+        padding: 0;
+        gap: 5rem;
+    }
+    .works>.awesome>span:nth-of-type(3){
+        width: 15rem;
+    }
+    .w-right{
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+    }
+    .w-mainCircle{
+        position: static;
+    }
+    .w-backCircle{
+        left: 8rem !important;
+    }
+}

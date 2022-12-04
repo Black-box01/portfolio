@@ -1,0 +1,136 @@
+.portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem 4rem;
+}
+
+.portfolio span:nth-of-type(1){
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.portfolio span:nth-of-type(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.note{
+    text-align: center;
+    color: var(--orange);
+    padding: 1rem 0;
+    text-decoration: underline;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 1rem 0;
+    gap: 100px;
+}
+
+.phone{
+    width: 300px;
+    height: 600px;
+    position: relative;
+    flex: 1;
+}
+
+.phoneScreen{
+    position: absolute;
+    width: 264px;
+    height: 567px;
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    border-radius: 28px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+    overflow: scroll;
+}
+
+.phoneScreen::-webkit-scrollbar{
+    display: none;
+}
+
+.phoneApp{
+    width: 100%;
+}
+
+.projectDetail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.projectTitle{
+     font-size: 1.5rem;
+     font-weight: bold;
+}
+
+.projectDes{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.laptop{
+    width: 600px;
+    height: 379px;
+    flex: 1;
+    position: relative;
+}
+
+.laptopScreen{
+    width: 451px;
+    height: 283px;
+    position: absolute;
+    top: 18px;
+    left: 68px;
+    overflow: scroll;
+}
+
+.laptopApp{
+    width: 100%;
+}
+
+.laptopScreen::-webkit-scrollbar{
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px){
+    .project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+    }
+    .projectDes{
+        display: none;
+    }
+    .portfolio{
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        margin: -200px;
+        padding: 120px
+}
+}

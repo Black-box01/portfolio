@@ -1,0 +1,32 @@
+.floatingdiv{
+    justify-content: space-around;
+    display: flex;
+    background: white;
+    box-shadow: var(--boxShadow);
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+    align-items: center;
+    padding: 0px 28px 0px 0px;
+    height: 4.5rem;
+}
+
+.floatingdiv>img{
+    transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    -o-transform: scale(0.4);
+}
+
+.floatingdiv>span{
+    font-family: Gill Sans, 
+    'Gill Sans MT', 
+    Calibri, 'Trebuchet MS', 
+    sans-serif;
+    font-size: 22px;
+    color: brown;
+    display: inline;
+}
