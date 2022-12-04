@@ -1,0 +1,16 @@
+{
+  "resourceName": "s3portfoliostorage5d6b1c7f",
+  "bucketName": "portfolio-storage-5d6b1c7f",
+  "policyUUID": "beff07dc",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "DELETE",
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "starter",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@alan-ai/alan-sdk-web": "^1.8.37",
+    "@emailjs/browser": "^3.7.0",
+    "@iconscout/react-unicons": "^1.1.6",
+    "@material-ui/core": "^4.12.4",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "aws-amplify": "^5.0.4",
+    "classname": "0.0.0",
+    "emailjs": "^4.0.1",
+    "framer-motion": "^7.6.1",
+    "heroicons": "^2.0.12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-howler": "^5.2.0",
+    "react-native-heroicons": "^3.2.0",
+    "react-native-svg": "^13.4.0",
+    "react-scripts": "5.0.0",
+    "react-scroll": "^1.8.7",
+    "react-spinners": "^0.13.6",
+    "swiper": "^8.4.4",
+    "web-vitals": "^2.1.0",
+    "words-to-numbers": "^1.5.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

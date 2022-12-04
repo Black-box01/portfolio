@@ -1,0 +1,99 @@
+type PORTFOLIOLAPTOP @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  imgLaptop: String!
+  imgContent: String!
+  projectTitle: String!
+  projectDescription: String!
+  btnText: String!
+  btnLink: String!
+}
+
+type PORTFOLIOPHONE @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  imgPhone: String!
+  imgContent: String!
+  projectTitle: String!
+  projectDescription: String!
+  btnText: String!
+  btnLink: String
+}
+
+type INTROes @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  firstText: String!
+  name: String!
+  description: String!
+  emphasesedText: String!
+  descriptionCont: String!
+  githubLink: String!
+  linkedinLink: String!
+  instagramLink: String!
+  githubImage: String!
+  linkedinImage: String!
+  instagramImage: String!
+  glasses: String!
+  floatingrightImage: String!
+  floatingrightText: String!
+  floatingleftImage: String!
+  floatingleftText: String!
+  characterImage: String!
+  blueBkImage: String!
+  orangeBkImage: String!
+}
+
+type NAVBAR @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+}
+
+type SERVICES @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  awesome: String!
+  services: String!
+  text: String!
+  cardDesign: String!
+  cardDeveloper: String!
+  cardUi: String!
+}
+
+type EXPERIENCE @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  yearsExperience: String!
+  completedProjects: String!
+  companiesWord: String!
+}
+
+type WORKS @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  works: String!
+  brands: String!
+  text: String!
+}
+
+type PORTFOLIO @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  recent: String!
+  portfolio: String!
+  text: String!
+}
+
+type TESTIMONIALS @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  img: String!
+  review: String!
+}
+
+type CONTACT @model @auth(rules: [{allow: public}]) {
+  id: ID!
+}
+
+type FOOTER @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  instagramLink: String!
+  linkedinLink: String!
+  githubLink: String!
+  allRights: String!
+  email: String!
+  developer: String!
+}
+ 
