@@ -1,3 +1,5 @@
+### THIS SITE WAS DEVELOPED WITH REACT JS
+
 ## HOW TO USE
 
 Clone this repository to your local system.\
@@ -7,6 +9,11 @@ After the installation, run npm start.\
 
 ### `NOTE: THIS PROJECT IS CONNECTED TO AN BACKEND,
 YOU'VE HAVE TO CODE YOURS FROM SCRATCH OR USE ONLY THE FRONT END CODES\`
+
+### FOR MORE INQUIRIES, CHECK OUT MY LINKEDIN PAGE
+https://www.linkedin.com/in/onyekachi-nwachukwu-857b32238
+
+### OR MY WHATSAPP BUSINESS LINE: 09024787192
 
 # Getting Started with Create React App
 
