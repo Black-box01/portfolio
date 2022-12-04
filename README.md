@@ -5,9 +5,9 @@
 Clone this repository to your local system.\
 Head over to your terminal and navigate to the project.\
 Run npm install to install all node packages,\
-After the installation, run npm start.\
+After the installation, run npm start
 
-### `NOTE: THIS PROJECT IS CONNECTED TO AN BACKEND,
+### `NOTE: THIS PROJECT IS CONNECTED TO AWS BACKEND,
 YOU'VE HAVE TO CODE YOURS FROM SCRATCH OR USE ONLY THE FRONT END CODES\`
 
 ### FOR MORE INQUIRIES, CHECK OUT MY LINKEDIN PAGE
