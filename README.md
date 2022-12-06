@@ -1,3 +1,20 @@
+### THIS SITE WAS DEVELOPED WITH REACT JS AND AWS AMPLIFY
+
+## HOW TO USE
+
+Clone this repository to your local system.\
+Head over to your terminal and navigate to the project.\
+Run npm install to install all node packages,\
+After the installation, run npm start
+
+### `NOTE: THIS PROJECT IS CONNECTED TO AWS BACKEND,
+YOU'VE HAVE TO CODE YOURS FROM SCRATCH OR USE ONLY THE FRONT END CODES\`
+
+### FOR MORE INQUIRIES, CHECK OUT MY LINKEDIN PAGE
+https://www.linkedin.com/in/onyekachi-nwachukwu-857b32238
+
+### OR MY WHATSAPP BUSINESS LINE: 09024787192
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
