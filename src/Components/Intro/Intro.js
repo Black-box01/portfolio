@@ -1,18 +1,15 @@
+'use client';
 import React from 'react'
 import './intro.css'
 import Github from '../../../src/img/github.png'
 import LinkedIn from '../../../src/img/linkedin.png'
 import Instagram from '../../../src/img/instagram.png'
-import Vector1 from '../../../src/img/bpb1.png'
-import Vector2 from '../../../src/img/bpo.png'
-import boy from '../../../src/img/boy.png'
 import thumbup from '../../../src/img/thumbup.png'
 import Crown from '../../../src/img/crown.png'
 import Glasses from '../../../src/img/glassesimoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import {themeContext} from '../../Context'
 import {useContext} from 'react'
-import {motion} from 'framer-motion'
 import music from '../../Documents/music.mp3'
 import { Howl } from 'howler'
 import music1 from '../../img/music1.png'
@@ -21,7 +18,6 @@ import { Link } from 'react-scroll'
 import {API, graphqlOperation } from 'aws-amplify'
 import { listINTROes } from '../../graphql/queries'
 import { useState, useEffect} from 'react'
-import { Thumbs } from 'swiper'
 
 const Intro = () => {
 
@@ -32,8 +28,6 @@ const Intro = () => {
         setMain(result?.data?.listINTROes?.items[0])
       })
     }, []);
-
-    const transition = {duration: 2, type: 'spring'}
     
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
@@ -84,27 +78,15 @@ const Intro = () => {
                 <img src={main.blueBkImage} alt='Vector1' className='v1' />
                 <img src={main.orangeBkImage} alt='Vector2' className='v2'/>
                 <img src={main.characterImage} alt='boy' className='v3'/>
-                <motion.img 
-                  initial={{left: '-36%'}}
-                  whileInView={{left: '-24%', top: '-50px'}}
-                  transition={transition}
-                src={Glasses} alt='Glasses' />
-                <motion.div 
-                  initial={{top: '-4%', left: '80%'}}
-                  whileInView={{left: '68%'}}
-                  transition={transition}
-                style={{top: '-4%', left: '68%'}} className='floating-div'>
+                <img src={Glasses} alt='Glasses' />
+                <div style={{top: '-4%', left: '68%'}} className='floating-div'>
                     <FloatingDiv image={Crown} 
                     txt1={main.floatingrightText} txt2='Developer'/>
-                </motion.div>
-                <motion.div
-                initial={{left: '9rem'}}
-                  whileInView={{left: '0rem'}}
-                  transition={transition}
-                style={{top: '18rem'}} className='floating-div'>
+                </div>
+                <div style={{top: '18rem'}} className='floating-div'>
                     <FloatingDiv image={thumbup} 
                     txt1={main.floatingleftText} txt2='Designer'/>
-                </motion.div>
+                </div>
                 <div className='blur' style={{background:
                      '#C1F5FF', 
                      top: '17rem', width:

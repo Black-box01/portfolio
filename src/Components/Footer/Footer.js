@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import './Footer.css'
 import Wave from '../../img/wave.png'

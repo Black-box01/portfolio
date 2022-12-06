@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import './Works.css'
 import Upwork from '../../img/Upwork.png'
@@ -7,7 +8,6 @@ import Shopify from '../../img/Shopify.png'
 import Facebook from '../../img/Facebook.png'
 import {themeContext} from '../../Context'
 import {useContext} from 'react'
-import {motion} from 'framer-motion'
 import { Link } from 'react-scroll'
 import {API, graphqlOperation } from 'aws-amplify'
 import { listWORKS } from '../../graphql/queries'
@@ -45,11 +45,7 @@ const Works = () => {
                 {/* Right Side */}
 
         <div className='w-right'>
-            <motion.div 
-              initial={{ rotate: 45 }}
-              whileInView={{ rotate: 0 }}
-              viewport={{margin: '-40px'}}
-              transition={{duration: 3.5, type: 'spring'}}
+            <div 
             className='w-mainCircle'>
                 <div className='w-secCircle'>
                     <img src={Upwork} alt='Upwork' />
@@ -66,7 +62,7 @@ const Works = () => {
                 <div className='w-secCircle'>
                     <img src={Facebook} alt='Facebook' />
                 </div>
-            </motion.div>  
+            </div>  
 
             {/* Background Circle */}
             <div className='w-backCircle blueCircle'></div>

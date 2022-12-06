@@ -1,10 +1,7 @@
+'use client';
 import React from 'react'
 import './Testimonials.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import profilePic1 from '../../img/profile1.jpg'
-import profilePic2 from '../../img/profile2.jpg'
-import profilePic3 from '../../img/profile3.jpg'
-import profilePic4 from '../../img/profile4.jpg'
 import { Pagination } from 'swiper'
 import 'swiper/css/pagination'
 import 'swiper/css'
@@ -28,25 +25,6 @@ const Testimonials = () => {
      
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
-
-    const clien = [
-        {
-            img: profilePic1,
-            review: 'Fusce tempus ornare eget primis ipsum tortor non curae ultricies pharetra nostra blandit donec suscipit nam magnis class torquent sagittis taciti velit luctus est natoque odio s'
-        },
-        {
-            img: profilePic2,
-            review: 'feugiat tellus sapien rutrum quisque penatibus pellentesque elementum libero euismod aliquet venenatis nec nulla himenaeos laoreet bibendum molestie'
-        },
-        {
-            img: profilePic3,
-            review: 'non curae ultricies pharetra nostra blandit donec suscipit nam magnis class torquent sagittis taciti velit luctus est natoque odio suspendisse aptent inceptos adipiscing placerat pr'
-        },
-        {
-            img: profilePic4,
-            review: 'pendisse aptent inceptos adipiscing placerat pretium feugiat tellus sapien rutrum quisque penatibus pellentesque elementum libero euismod aliquet venenatis nec nulla'
-        }
-    ]
 
   return (
     <div className='t-wrapper' id='Testimonials'>

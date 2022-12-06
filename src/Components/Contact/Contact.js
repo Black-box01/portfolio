@@ -1,24 +1,14 @@
-import React, {useState, useEffect} from 'react';
+'use client';
+import React, {useState} from 'react';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
 import {themeContext} from '../../Context'
 import {useContext} from 'react'
 import { useRef } from 'react';
-import {API, graphqlOperation } from 'aws-amplify'
-import { listCONTACTS } from '../../graphql/queries'
 
 
 const Contact = () => {
-
-    const [main, setMain] = useState([]);
   
-      useEffect(() => {
-        API.graphql(graphqlOperation(listCONTACTS)).then((result) => {
-          setMain(result?.data?.listINTROS?.items[0])
-        })
-      }, []);
-  
-     
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
 

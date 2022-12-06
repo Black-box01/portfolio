@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import {themeContext} from '../../Context'
 import {useContext} from 'react'
