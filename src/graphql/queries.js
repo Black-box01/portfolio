@@ -1,6 +1,67 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const getRESUME = /* GraphQL */ `
+  query GetRESUME($id: ID!) {
+    getRESUME(id: $id) {
+      id
+      source
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const listRESUMES = /* GraphQL */ `
+  query ListRESUMES(
+    $filter: ModelRESUMEFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listRESUMES(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        source
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+  }
+`;
+export const syncRESUMES = /* GraphQL */ `
+  query SyncRESUMES(
+    $filter: ModelRESUMEFilterInput
+    $limit: Int
+    $nextToken: String
+    $lastSync: AWSTimestamp
+  ) {
+    syncRESUMES(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      lastSync: $lastSync
+    ) {
+      items {
+        id
+        source
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+  }
+`;
 export const getMUSIC = /* GraphQL */ `
   query GetMUSIC($id: ID!) {
     getMUSIC(id: $id) {

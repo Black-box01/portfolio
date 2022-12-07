@@ -44,7 +44,6 @@ const Intro = () => {
       src: muoo,
       html5: true,
     });
-    
 
 
   return (
