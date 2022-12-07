@@ -1,6 +1,54 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const createMUSIC = /* GraphQL */ `
+  mutation CreateMUSIC(
+    $input: CreateMUSICInput!
+    $condition: ModelMUSICConditionInput
+  ) {
+    createMUSIC(input: $input, condition: $condition) {
+      id
+      source
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const updateMUSIC = /* GraphQL */ `
+  mutation UpdateMUSIC(
+    $input: UpdateMUSICInput!
+    $condition: ModelMUSICConditionInput
+  ) {
+    updateMUSIC(input: $input, condition: $condition) {
+      id
+      source
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const deleteMUSIC = /* GraphQL */ `
+  mutation DeleteMUSIC(
+    $input: DeleteMUSICInput!
+    $condition: ModelMUSICConditionInput
+  ) {
+    deleteMUSIC(input: $input, condition: $condition) {
+      id
+      source
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
 export const createPORTFOLIOLAPTOP = /* GraphQL */ `
   mutation CreatePORTFOLIOLAPTOP(
     $input: CreatePORTFOLIOLAPTOPInput!

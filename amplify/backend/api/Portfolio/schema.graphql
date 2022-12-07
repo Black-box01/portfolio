@@ -1,3 +1,8 @@
+type MUSIC @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  source: String
+}
+
 type PORTFOLIOLAPTOP @model @auth(rules: [{allow: public}]) {
   id: ID!
   imgLaptop: String!

@@ -1,8 +1,7 @@
 'use client';
-import React from 'react'
+import React, {useContext} from 'react'
 import './Card.css'
 import {themeContext} from '../../Context'
-import {useContext} from 'react'
 
 const Card = (props) => {
   const theme = useContext(themeContext);

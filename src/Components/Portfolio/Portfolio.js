@@ -1,12 +1,10 @@
 'use client';
-import React from 'react'
+import React, { useState, useEffect, useContext} from 'react'
 import {themeContext} from '../../Context'
-import {useContext} from 'react'
 import PortfolioPhone from './PortfolioPhone'
 import PortfolioLaptop from './PortfolioLaptop'
 import {API, graphqlOperation } from 'aws-amplify'
 import { listPORTFOLIOS } from '../../graphql/queries'
-import { useState, useEffect} from 'react'
 
 
 const Portfolio = () => {

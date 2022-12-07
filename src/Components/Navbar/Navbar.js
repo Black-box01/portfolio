@@ -1,13 +1,11 @@
 'use client';
-import React from 'react'
+import React, { useState, useEffect, useContext} from 'react'
 import Toggle from '../Toggle/Toggle'
 import './Navbar.css'
 import {themeContext} from '../../Context'
-import {useContext} from 'react'
 import { Link } from 'react-scroll'
 import {API, graphqlOperation } from 'aws-amplify'
 import { listNAVBARS } from '../../graphql/queries'
-import { useState, useEffect} from 'react'
 
 
 

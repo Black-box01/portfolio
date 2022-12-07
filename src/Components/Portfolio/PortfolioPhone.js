@@ -1,9 +1,8 @@
 'use client';
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import './Portfolio.css'
 import {API, graphqlOperation } from 'aws-amplify'
 import { listPORTFOLIOPHONES } from '../../graphql/queries'
-import { useState, useEffect} from 'react'
 
 function PortfolioPhone() {
 

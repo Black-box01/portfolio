@@ -9,19 +9,27 @@ import Crown from '../../../src/img/crown.png'
 import Glasses from '../../../src/img/glassesimoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import {themeContext} from '../../Context'
-import {useContext} from 'react'
-import music from '../../Documents/music.mp3'
+import {useContext, useState, useEffect} from 'react'
 import { Howl } from 'howler'
 import music1 from '../../img/music1.png'
 import music2 from '../../img/music2.png'
 import { Link } from 'react-scroll'
 import {API, graphqlOperation } from 'aws-amplify'
 import { listINTROes } from '../../graphql/queries'
-import { useState, useEffect} from 'react'
+import { listMUSIC } from '../../graphql/queries'
 
 const Intro = () => {
 
   const [main, setMain] = useState([]);
+  const [mu, setMu] = useState([]);
+
+  const muoo = mu.source
+
+    useEffect(() => {
+      API.graphql(graphqlOperation(listMUSIC)).then((result) => {
+        setMu(result?.data?.listMUSIC?.items[0])
+      })
+    }, []);
 
     useEffect(() => {
       API.graphql(graphqlOperation(listINTROes)).then((result) => {
@@ -33,11 +41,10 @@ const Intro = () => {
     const darkMode = theme.state.darkMode;
 
     const sound = new Howl({
-      src: music,
+      src: muoo,
       html5: true,
     });
     
-    console.log(main)
 
 
   return (

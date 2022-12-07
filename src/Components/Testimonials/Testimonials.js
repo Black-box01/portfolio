@@ -1,15 +1,13 @@
 'use client';
-import React from 'react'
+import React, { useState, useEffect, useContext} from 'react'
 import './Testimonials.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Pagination } from 'swiper'
 import 'swiper/css/pagination'
 import 'swiper/css'
 import {themeContext} from '../../Context'
-import {useContext} from 'react'
 import {API, graphqlOperation } from 'aws-amplify'
 import { listTESTIMONIALS } from '../../graphql/queries'
-import { useState, useEffect} from 'react'
 
 
 const Testimonials = () => {

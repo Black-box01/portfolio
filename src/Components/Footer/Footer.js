@@ -1,5 +1,5 @@
 'use client';
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import './Footer.css'
 import Wave from '../../img/wave.png'
 import Instagram from '@iconscout/react-unicons/icons/uil-instagram'
@@ -7,7 +7,6 @@ import LinkedIn from '@iconscout/react-unicons/icons/uil-linkedin'
 import Github from '@iconscout/react-unicons/icons/uil-github'
 import {API, graphqlOperation } from 'aws-amplify'
 import { listFOOTERS } from '../../graphql/queries'
-import { useState, useEffect} from 'react'
 
 const Footer = () => {
 

@@ -1,6 +1,45 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const onCreateMUSIC = /* GraphQL */ `
+  subscription OnCreateMUSIC($filter: ModelSubscriptionMUSICFilterInput) {
+    onCreateMUSIC(filter: $filter) {
+      id
+      source
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onUpdateMUSIC = /* GraphQL */ `
+  subscription OnUpdateMUSIC($filter: ModelSubscriptionMUSICFilterInput) {
+    onUpdateMUSIC(filter: $filter) {
+      id
+      source
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onDeleteMUSIC = /* GraphQL */ `
+  subscription OnDeleteMUSIC($filter: ModelSubscriptionMUSICFilterInput) {
+    onDeleteMUSIC(filter: $filter) {
+      id
+      source
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
 export const onCreatePORTFOLIOLAPTOP = /* GraphQL */ `
   subscription OnCreatePORTFOLIOLAPTOP(
     $filter: ModelSubscriptionPORTFOLIOLAPTOPFilterInput

@@ -5,6 +5,8 @@
  **************************************************************************/
 
 export { default as studioTheme } from "./studioTheme";
+export { default as MUSICCreateForm } from "./MUSICCreateForm";
+export { default as MUSICUpdateForm } from "./MUSICUpdateForm";
 export { default as PORTFOLIOLAPTOPCreateForm } from "./PORTFOLIOLAPTOPCreateForm";
 export { default as PORTFOLIOLAPTOPUpdateForm } from "./PORTFOLIOLAPTOPUpdateForm";
 export { default as PORTFOLIOPHONECreateForm } from "./PORTFOLIOPHONECreateForm";

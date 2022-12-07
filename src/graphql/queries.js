@@ -1,6 +1,67 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const getMUSIC = /* GraphQL */ `
+  query GetMUSIC($id: ID!) {
+    getMUSIC(id: $id) {
+      id
+      source
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const listMUSIC = /* GraphQL */ `
+  query ListMUSIC(
+    $filter: ModelMUSICFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listMUSIC(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        source
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+  }
+`;
+export const syncMUSIC = /* GraphQL */ `
+  query SyncMUSIC(
+    $filter: ModelMUSICFilterInput
+    $limit: Int
+    $nextToken: String
+    $lastSync: AWSTimestamp
+  ) {
+    syncMUSIC(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      lastSync: $lastSync
+    ) {
+      items {
+        id
+        source
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+  }
+`;
 export const getPORTFOLIOLAPTOP = /* GraphQL */ `
   query GetPORTFOLIOLAPTOP($id: ID!) {
     getPORTFOLIOLAPTOP(id: $id) {

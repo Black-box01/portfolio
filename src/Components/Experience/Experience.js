@@ -1,11 +1,9 @@
 'use client';
-import React from 'react'
+import React, { useState, useEffect, useContext} from 'react'
 import './Experience.css'
 import {themeContext} from '../../Context'
-import {useContext} from 'react'
 import {API, graphqlOperation } from 'aws-amplify'
 import { listEXPERIENCES } from '../../graphql/queries'
-import { useState, useEffect} from 'react'
 
 
 const Experience = () => {
