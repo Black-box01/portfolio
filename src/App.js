@@ -50,7 +50,7 @@ function App() {
         />
         <span>I'M KACHI</span>
         <span>FULL STACK</span>
-        <span>MOBILE & WEB DEVELOPMENT</span>
+        <span>MOBILE & WEB DEVELOPER</span>
         <span>😎😘</span>
       </div>
       
