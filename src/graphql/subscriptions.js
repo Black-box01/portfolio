@@ -1,45 +1,6 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateRESUME = /* GraphQL */ `
-  subscription OnCreateRESUME($filter: ModelSubscriptionRESUMEFilterInput) {
-    onCreateRESUME(filter: $filter) {
-      id
-      source
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-    }
-  }
-`;
-export const onUpdateRESUME = /* GraphQL */ `
-  subscription OnUpdateRESUME($filter: ModelSubscriptionRESUMEFilterInput) {
-    onUpdateRESUME(filter: $filter) {
-      id
-      source
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-    }
-  }
-`;
-export const onDeleteRESUME = /* GraphQL */ `
-  subscription OnDeleteRESUME($filter: ModelSubscriptionRESUMEFilterInput) {
-    onDeleteRESUME(filter: $filter) {
-      id
-      source
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-    }
-  }
-`;
 export const onCreateMUSIC = /* GraphQL */ `
   subscription OnCreateMUSIC($filter: ModelSubscriptionMUSICFilterInput) {
     onCreateMUSIC(filter: $filter) {

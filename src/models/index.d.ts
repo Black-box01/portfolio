@@ -2,10 +2,6 @@ import { ModelInit, MutableModel } from "@aws-amplify/datastore";
 // @ts-ignore
 import { LazyLoading, LazyLoadingDisabled } from "@aws-amplify/datastore";
 
-type RESUMEMetaData = {
-  readOnlyFields: 'createdAt' | 'updatedAt';
-}
-
 type MUSICMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
 }
@@ -52,26 +48,6 @@ type CONTACTMetaData = {
 
 type FOOTERMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
-}
-
-type EagerRESUME = {
-  readonly id: string;
-  readonly source?: string | null;
-  readonly createdAt?: string | null;
-  readonly updatedAt?: string | null;
-}
-
-type LazyRESUME = {
-  readonly id: string;
-  readonly source?: string | null;
-  readonly createdAt?: string | null;
-  readonly updatedAt?: string | null;
-}
-
-export declare type RESUME = LazyLoading extends LazyLoadingDisabled ? EagerRESUME : LazyRESUME
-
-export declare const RESUME: (new (init: ModelInit<RESUME, RESUMEMetaData>) => RESUME) & {
-  copyOf(source: RESUME, mutator: (draft: MutableModel<RESUME, RESUMEMetaData>) => MutableModel<RESUME, RESUMEMetaData> | void): RESUME;
 }
 
 type EagerMUSIC = {

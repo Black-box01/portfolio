@@ -1,54 +1,6 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createRESUME = /* GraphQL */ `
-  mutation CreateRESUME(
-    $input: CreateRESUMEInput!
-    $condition: ModelRESUMEConditionInput
-  ) {
-    createRESUME(input: $input, condition: $condition) {
-      id
-      source
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-    }
-  }
-`;
-export const updateRESUME = /* GraphQL */ `
-  mutation UpdateRESUME(
-    $input: UpdateRESUMEInput!
-    $condition: ModelRESUMEConditionInput
-  ) {
-    updateRESUME(input: $input, condition: $condition) {
-      id
-      source
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-    }
-  }
-`;
-export const deleteRESUME = /* GraphQL */ `
-  mutation DeleteRESUME(
-    $input: DeleteRESUMEInput!
-    $condition: ModelRESUMEConditionInput
-  ) {
-    deleteRESUME(input: $input, condition: $condition) {
-      id
-      source
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-    }
-  }
-`;
 export const createMUSIC = /* GraphQL */ `
   mutation CreateMUSIC(
     $input: CreateMUSICInput!
