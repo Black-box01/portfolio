@@ -17,9 +17,6 @@
       },
       "storage": {
         "s3portfoliostorage5d6b1c7f": {}
-      },
-      "api": {
-        "Portfolio": {}
       }
     }
   }
