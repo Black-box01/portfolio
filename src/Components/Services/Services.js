@@ -5,21 +5,30 @@ import Heart from '../../img/heartemoji.png'
 import Glasses from '../../img/glasses.png'
 import Humble from '../../img/humble.png'
 import Card from '../Card/Card'
-import Resume from '../../Documents/Resume.pdf'
+// import Resume from '../../Documents/Resume.pdf'
 import {themeContext} from '../../Context'
 import {API, graphqlOperation } from 'aws-amplify'
 import { listSERVICES } from '../../graphql/queries'
+import { listRESUMES } from '../../graphql/queries'
 
 
 const Services = () => {
 
     const [main, setMain] = useState([]);
+    const [re, setRe] = useState([]);
 
     useEffect(() => {
       API.graphql(graphqlOperation(listSERVICES)).then((result) => {
         setMain(result?.data?.listSERVICES?.items[0])
       })
     }, []);
+
+    useEffect(() => {
+      API.graphql(graphqlOperation(listRESUMES)).then((result) => {
+        setRe(result?.data?.listRESUMES?.items[0])
+      })
+    }, []);
+
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
   return (
@@ -35,7 +44,7 @@ const Services = () => {
                 color : darkMode? 'white': '', width: '530px'
               }}>{main.text}
              </span>
-             <a href={Resume} download>
+             <a href={re.source} download>
                 <button className='button a-button'>Download Resume</button>
              </a>
              <div className='blur a-blur' style={{background: '#ABF1FF94'}}></div>
