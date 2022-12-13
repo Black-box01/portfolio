@@ -40,7 +40,7 @@ const Experience = () => {
         <div className='achievement'>
           <div className='circle' style={{
             color : darkMode? '#242D49': ''
-          }}>{main.completedProjects}</div>
+          }}>{main.companiesWord}</div>
           <span>Companies</span>
           <span>Work</span>
         </div>
