@@ -1,3 +1,18 @@
+type PORTFOLIOLAPTOPNEW @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  imgLaptop: String
+  imgContent: String
+  projectTitle: String
+  projectDescription: String
+  btnTex: String
+  btnLink: String
+}
+
+type RESUME @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  source: String
+}
+
 type MUSIC @model @auth(rules: [{allow: public}]) {
   id: ID!
   source: String

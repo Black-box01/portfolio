@@ -2,15 +2,15 @@
 import React, { useState, useEffect} from 'react'
 import './Portfolio.css'
 import {API, graphqlOperation } from 'aws-amplify'
-import { listPORTFOLIOLAPTOPS } from '../../graphql/queries'
+import { listPORTFOLIOLAPTOPNEWS } from '../../graphql/queries'
 
 function PortfolioLaptop() {
 
     const [files, setFiles] = useState([]);
   
     useEffect(() => {
-      API.graphql(graphqlOperation(listPORTFOLIOLAPTOPS)).then((result) => {
-        setFiles(result?.data?.listPORTFOLIOLAPTOPS?.items)
+      API.graphql(graphqlOperation(listPORTFOLIOLAPTOPNEWS)).then((result) => {
+        setFiles(result?.data?.listPORTFOLIOLAPTOPNEWS?.items)
       })
     }, []);
   
@@ -30,7 +30,7 @@ function PortfolioLaptop() {
                     <div className='projectDetail'>
                     <h1 className='projectTitle'>{file.projectTitle}</h1>
                     <p className='projectDes'>{file.projectDescription}</p>
-                    <button className='button projectButton'><a href={file.btnLink}>{file.btnText}</a></button>
+                    <button className='button projectButton'><a href={file.btnLink}>{file.btnTex}</a></button>
                     </div>
                 </div>
         )

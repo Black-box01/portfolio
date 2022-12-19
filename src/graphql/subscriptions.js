@@ -1,6 +1,66 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const onCreatePORTFOLIOLAPTOPNEW = /* GraphQL */ `
+  subscription OnCreatePORTFOLIOLAPTOPNEW(
+    $filter: ModelSubscriptionPORTFOLIOLAPTOPNEWFilterInput
+  ) {
+    onCreatePORTFOLIOLAPTOPNEW(filter: $filter) {
+      id
+      imgLaptop
+      imgContent
+      projectTitle
+      projectDescription
+      btnTex
+      btnLink
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onUpdatePORTFOLIOLAPTOPNEW = /* GraphQL */ `
+  subscription OnUpdatePORTFOLIOLAPTOPNEW(
+    $filter: ModelSubscriptionPORTFOLIOLAPTOPNEWFilterInput
+  ) {
+    onUpdatePORTFOLIOLAPTOPNEW(filter: $filter) {
+      id
+      imgLaptop
+      imgContent
+      projectTitle
+      projectDescription
+      btnTex
+      btnLink
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onDeletePORTFOLIOLAPTOPNEW = /* GraphQL */ `
+  subscription OnDeletePORTFOLIOLAPTOPNEW(
+    $filter: ModelSubscriptionPORTFOLIOLAPTOPNEWFilterInput
+  ) {
+    onDeletePORTFOLIOLAPTOPNEW(filter: $filter) {
+      id
+      imgLaptop
+      imgContent
+      projectTitle
+      projectDescription
+      btnTex
+      btnLink
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
 export const onCreateRESUME = /* GraphQL */ `
   subscription OnCreateRESUME($filter: ModelSubscriptionRESUMEFilterInput) {
     onCreateRESUME(filter: $filter) {

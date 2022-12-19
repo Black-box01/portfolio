@@ -2,6 +2,10 @@ import { ModelInit, MutableModel } from "@aws-amplify/datastore";
 // @ts-ignore
 import { LazyLoading, LazyLoadingDisabled } from "@aws-amplify/datastore";
 
+type PORTFOLIOLAPTOPNEWMetaData = {
+  readOnlyFields: 'createdAt' | 'updatedAt';
+}
+
 type RESUMEMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
 }
@@ -52,6 +56,36 @@ type CONTACTMetaData = {
 
 type FOOTERMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
+}
+
+type EagerPORTFOLIOLAPTOPNEW = {
+  readonly id: string;
+  readonly imgLaptop?: string | null;
+  readonly imgContent?: string | null;
+  readonly projectTitle?: string | null;
+  readonly projectDescription?: string | null;
+  readonly btnTex?: string | null;
+  readonly btnLink?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+type LazyPORTFOLIOLAPTOPNEW = {
+  readonly id: string;
+  readonly imgLaptop?: string | null;
+  readonly imgContent?: string | null;
+  readonly projectTitle?: string | null;
+  readonly projectDescription?: string | null;
+  readonly btnTex?: string | null;
+  readonly btnLink?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+export declare type PORTFOLIOLAPTOPNEW = LazyLoading extends LazyLoadingDisabled ? EagerPORTFOLIOLAPTOPNEW : LazyPORTFOLIOLAPTOPNEW
+
+export declare const PORTFOLIOLAPTOPNEW: (new (init: ModelInit<PORTFOLIOLAPTOPNEW, PORTFOLIOLAPTOPNEWMetaData>) => PORTFOLIOLAPTOPNEW) & {
+  copyOf(source: PORTFOLIOLAPTOPNEW, mutator: (draft: MutableModel<PORTFOLIOLAPTOPNEW, PORTFOLIOLAPTOPNEWMetaData>) => MutableModel<PORTFOLIOLAPTOPNEW, PORTFOLIOLAPTOPNEWMetaData> | void): PORTFOLIOLAPTOPNEW;
 }
 
 type EagerRESUME = {

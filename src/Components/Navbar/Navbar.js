@@ -1,4 +1,3 @@
-'use client';
 import React, { useState, useEffect, useContext} from 'react'
 import Toggle from '../Toggle/Toggle'
 import './Navbar.css'

@@ -1,6 +1,86 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const getPORTFOLIOLAPTOPNEW = /* GraphQL */ `
+  query GetPORTFOLIOLAPTOPNEW($id: ID!) {
+    getPORTFOLIOLAPTOPNEW(id: $id) {
+      id
+      imgLaptop
+      imgContent
+      projectTitle
+      projectDescription
+      btnTex
+      btnLink
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const listPORTFOLIOLAPTOPNEWS = /* GraphQL */ `
+  query ListPORTFOLIOLAPTOPNEWS(
+    $filter: ModelPORTFOLIOLAPTOPNEWFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listPORTFOLIOLAPTOPNEWS(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+    ) {
+      items {
+        id
+        imgLaptop
+        imgContent
+        projectTitle
+        projectDescription
+        btnTex
+        btnLink
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+  }
+`;
+export const syncPORTFOLIOLAPTOPNEWS = /* GraphQL */ `
+  query SyncPORTFOLIOLAPTOPNEWS(
+    $filter: ModelPORTFOLIOLAPTOPNEWFilterInput
+    $limit: Int
+    $nextToken: String
+    $lastSync: AWSTimestamp
+  ) {
+    syncPORTFOLIOLAPTOPNEWS(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      lastSync: $lastSync
+    ) {
+      items {
+        id
+        imgLaptop
+        imgContent
+        projectTitle
+        projectDescription
+        btnTex
+        btnLink
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+  }
+`;
 export const getRESUME = /* GraphQL */ `
   query GetRESUME($id: ID!) {
     getRESUME(id: $id) {

@@ -74,4 +74,12 @@ n-button{
     .n-button{
         display: none;
     }
+    .n-left{
+        padding-left: 1.2rem;
+    }
+    .n-wrapper{
+        width: 100% !important;
+        right: 0rem !important;
+        top: 0rem !important;
+    }
 }

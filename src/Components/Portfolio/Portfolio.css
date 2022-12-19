@@ -131,6 +131,7 @@ a{
         -ms-transform: scale(0.7);
         -o-transform: scale(0.7);
         margin: -200px;
-        padding: 120px
+        padding: 120px;
+        top: -90rem !important;
 }
 }

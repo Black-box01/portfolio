@@ -1,4 +1,3 @@
-'use client';
 import React from 'react'
 import './intro.css'
 import Github from '../../../src/img/github.png'
@@ -8,29 +7,22 @@ import thumbup from '../../../src/img/thumbup.png'
 import Crown from '../../../src/img/crown.png'
 import Glasses from '../../../src/img/glassesimoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
+import character from '../../img/main(1).png'
+import blueDesign from '../../img/bpb1.png'
+import orangeDesign from '../../img/bpo.png'
 import {themeContext} from '../../Context'
 import {useContext, useState, useEffect} from 'react'
 import { Howl } from 'howler'
 import music1 from '../../img/music1.png'
 import music2 from '../../img/music2.png'
+import music from '../../Documents/music.mp3'
 import { Link } from 'react-scroll'
 import {API, graphqlOperation } from 'aws-amplify'
 import { listINTROes } from '../../graphql/queries'
-import { listMUSIC } from '../../graphql/queries'
 
 const Intro = () => {
 
   const [main, setMain] = useState([]);
-  const [mu, setMu] = useState([]);
-
-  const muoo = mu.source
-
-    useEffect(() => {
-      API.graphql(graphqlOperation(listMUSIC)).then((result) => {
-        setMu(result?.data?.listMUSIC?.items[0])
-      })
-    }, []);
-
     useEffect(() => {
       API.graphql(graphqlOperation(listINTROes)).then((result) => {
         setMain(result?.data?.listINTROes?.items[0])
@@ -41,7 +33,7 @@ const Intro = () => {
     const darkMode = theme.state.darkMode;
 
     const sound = new Howl({
-      src: muoo,
+      src: music,
       html5: true,
     });
     
@@ -82,9 +74,9 @@ const Intro = () => {
 
 
         <div className='i-right'>
-                <img src={main.blueBkImage} alt='Vector1' className='v1' />
-                <img src={main.orangeBkImage} alt='Vector2' className='v2'/>
-                <img src={main.characterImage} alt='boy' className='v3'/>
+                <img src={blueDesign} alt='Vector1' className='v1' />
+                <img src={orangeDesign} alt='Vector2' className='v2'/>
+                <img src={character} alt='boy' className='v3'/>
                 <img src={Glasses} alt='Glasses' />
                 <div style={{top: '-4%', left: '68%'}} className='floating-div'>
                     <FloatingDiv image={Crown} 

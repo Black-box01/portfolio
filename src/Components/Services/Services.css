@@ -64,10 +64,13 @@
         display: flex;
         flex-direction: column
     }
+    .awesome>:nth-child(3){
+        width: 90% !important;
+    }
     .cards{
         display: flex;
         flex-direction: column;
-        gap: 17rem;
+        gap: 19rem;
     }
     .cards>*{
         position: static;

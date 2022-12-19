@@ -126,6 +126,7 @@
         -moz-transform: scale(0.7);
         -ms-transform: scale(0.7);
         -o-transform: scale(0.7);
+        left: -1rem !important;
     }
     .w-mainCircle{
         position: static;

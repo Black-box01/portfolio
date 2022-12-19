@@ -86,7 +86,7 @@
     .experience{
         display: flex;
         flex-direction: column;
-        margin: 22rem 0 17rem 0;
+        margin: 28rem 0 17rem 0;
         position: static;
         gap: 3rem;
     }

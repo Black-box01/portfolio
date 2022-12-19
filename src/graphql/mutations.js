@@ -1,6 +1,69 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const createPORTFOLIOLAPTOPNEW = /* GraphQL */ `
+  mutation CreatePORTFOLIOLAPTOPNEW(
+    $input: CreatePORTFOLIOLAPTOPNEWInput!
+    $condition: ModelPORTFOLIOLAPTOPNEWConditionInput
+  ) {
+    createPORTFOLIOLAPTOPNEW(input: $input, condition: $condition) {
+      id
+      imgLaptop
+      imgContent
+      projectTitle
+      projectDescription
+      btnTex
+      btnLink
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const updatePORTFOLIOLAPTOPNEW = /* GraphQL */ `
+  mutation UpdatePORTFOLIOLAPTOPNEW(
+    $input: UpdatePORTFOLIOLAPTOPNEWInput!
+    $condition: ModelPORTFOLIOLAPTOPNEWConditionInput
+  ) {
+    updatePORTFOLIOLAPTOPNEW(input: $input, condition: $condition) {
+      id
+      imgLaptop
+      imgContent
+      projectTitle
+      projectDescription
+      btnTex
+      btnLink
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const deletePORTFOLIOLAPTOPNEW = /* GraphQL */ `
+  mutation DeletePORTFOLIOLAPTOPNEW(
+    $input: DeletePORTFOLIOLAPTOPNEWInput!
+    $condition: ModelPORTFOLIOLAPTOPNEWConditionInput
+  ) {
+    deletePORTFOLIOLAPTOPNEW(input: $input, condition: $condition) {
+      id
+      imgLaptop
+      imgContent
+      projectTitle
+      projectDescription
+      btnTex
+      btnLink
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
 export const createRESUME = /* GraphQL */ `
   mutation CreateRESUME(
     $input: CreateRESUMEInput!
