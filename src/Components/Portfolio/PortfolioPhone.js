@@ -22,7 +22,7 @@ function PortfolioPhone() {
           return(
             <div className='project' key={index} >
             <div className='phone'>
-                <img src={file.imgPhone} alt='Phone' />
+                <img src={file.imgPhone} alt='Phone' style={{borderRadius: '50px'}} />
                 <div className='phoneScreen'>
                   <img src={file.imgContent} alt='ScreenShot' className='phoneApp' />
                 </div>
