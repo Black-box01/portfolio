@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a8efe27b.css",
-    "main.js": "/portfolio/static/js/main.2a239225.js",
+    "main.css": "/portfolio/static/css/main.b41fc056.css",
+    "main.js": "/portfolio/static/js/main.d8bb3cc8.js",
+    "static/media/music.mp3": "/portfolio/static/media/music.07fee2bf9be3b5fd34ea.mp3",
+    "static/media/main(1).png": "/portfolio/static/media/main(1).d2d05d32f71770f15ba6.png",
+    "static/media/bpb1.png": "/portfolio/static/media/bpb1.462f4175f60483ba19a1.png",
     "static/media/glassesimoji.png": "/portfolio/static/media/glassesimoji.a08bdab12e8eb56a6874.png",
     "static/media/music1.png": "/portfolio/static/media/music1.56c5da69452da326f17a.png",
+    "static/media/bpo.png": "/portfolio/static/media/bpo.a9a0244c25a7acd3115d.png",
     "static/media/thumbup.png": "/portfolio/static/media/thumbup.e06790ba656f0397cbe5.png",
     "static/media/humble.png": "/portfolio/static/media/humble.c8b32b53675e68978981.png",
     "static/media/heartemoji.png": "/portfolio/static/media/heartemoji.26b1b6ed5e0e44083b28.png",
@@ -11,11 +15,11 @@
     "static/media/crown.png": "/portfolio/static/media/crown.dbe416beae9b49b842ab.png",
     "static/media/glasses.png": "/portfolio/static/media/glasses.71d7c1b0ff0b870a9d7d.png",
     "index.html": "/portfolio/index.html",
-    "main.a8efe27b.css.map": "/portfolio/static/css/main.a8efe27b.css.map",
-    "main.2a239225.js.map": "/portfolio/static/js/main.2a239225.js.map"
+    "main.b41fc056.css.map": "/portfolio/static/css/main.b41fc056.css.map",
+    "main.d8bb3cc8.js.map": "/portfolio/static/js/main.d8bb3cc8.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8efe27b.css",
-    "static/js/main.2a239225.js"
+    "static/css/main.b41fc056.css",
+    "static/js/main.d8bb3cc8.js"
   ]
 }
