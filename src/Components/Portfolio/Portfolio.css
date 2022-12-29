@@ -33,7 +33,6 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     margin: 1rem 0;
     gap: 100px;
 }
@@ -85,7 +84,6 @@ a{
 
 .projectDes{
     font-size: 17px;
-    text-align: justify;
     line-height: 18px;
 }
 
@@ -123,11 +121,12 @@ a{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 250px;
+        margin-top: 50px;
     }
     .projectDetail{
-        margin: -120px 0 0px 0px;
-        width: 90%
+        margin: -80px 0 0px 0px;
+        width: 85%;
+        margin-bottom: 50px
     }
     .projectDes{
         line-height: 25px;
@@ -140,7 +139,7 @@ a{
         -o-transform: scale(0.7);
         margin: -200px;
         padding: 120px;
-        top: -90rem !important;
+        top: 0rem !important;
     }
     .note{
         padding: 1rem 15px
