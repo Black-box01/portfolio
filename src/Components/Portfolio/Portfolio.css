@@ -26,8 +26,7 @@ a{
 .note{
     text-align: center;
     color: var(--orange);
-    padding: 1rem 0;
-    text-decoration: underline;
+    padding: 1rem 200px;
 }
 
 .project{
@@ -44,6 +43,7 @@ a{
     height: 600px;
     position: relative;
     flex: 1;
+    margin-left: 70px;
 }
 
 .phoneScreen{
@@ -75,6 +75,7 @@ a{
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    margin-right: 50px
 }
 
 .projectTitle{
@@ -83,9 +84,9 @@ a{
 }
 
 .projectDes{
-    font-size: 20px;
+    font-size: 17px;
     text-align: justify;
-    line-height: 20px;
+    line-height: 18px;
 }
 
 .laptop{
@@ -114,15 +115,22 @@ a{
 
 
 @media screen and (max-width: 1024px){
+    .phone{
+        margin-left: 0
+    }
     .project{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 150px;
+        margin-top: 250px;
+    }
+    .projectDetail{
+        margin: -120px 0 0px 0px;
+        width: 90%
     }
     .projectDes{
-        display: none;
+        line-height: 25px;
     }
     .portfolio{
         transform: scale(0.7);
@@ -133,5 +141,11 @@ a{
         margin: -200px;
         padding: 120px;
         top: -90rem !important;
-}
+    }
+    .note{
+        padding: 1rem 15px
+    }
+    .projectButton{
+        margin: 0px 0 0 0px !important;;
+    }
 }
